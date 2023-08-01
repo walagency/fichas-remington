@@ -102,6 +102,7 @@
 
       .izquierda {
         text-align: left !important;
+        margin-bottom: 10px;
       }
 
       .body {
@@ -140,6 +141,15 @@
         color: #000;
         font-size: 30px;
         font-family: "Open Sans", sans-serif;
+        margin-top: 20px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .title-styles {
+        color: #000;
+        font-size: 30px;
+        font-family: "Open Sans", sans-serif;
         font-weight: 800;
         margin-bottom: 10px;
       }
@@ -152,9 +162,9 @@
         line-height: 40px;
       }
 
-      .letra li {
+      .letra {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.42857143;
         color: #333;
         background-color: #fff;
@@ -263,28 +273,32 @@
 
       .LISTADO {
         font-size: 18px;
+        color: #333333;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
       .newaline {
         text-align: justify;
+        color: #333333;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
 
-      .title-images-container {
+     
+
+      .images-container {
         display: flex;
         flex-wrap: wrap;
         align-items: start;
         justify-content: center;
         gap: 115px;
+        background-color: aqua;
       }
-
-
-
 
       .imagen-container {
         display: flex; /* flexbox para centrar el contenido */
         justify-content: center; /* Centra horizontalmente el contenido */
-        align-items: end;
+        align-items: flex-start; /* Align text at the top of the container */
         width: 50px;
         flex-wrap: wrap;
         text-align: center;
@@ -294,14 +308,16 @@
         width: 100%; /* Hace que la imagen tenga un 100% de ancho y ocupe todo el ancho del div */
       }
 
-
-
+      .text-estilos {
+  align-self: flex-start; /* Align the text at the top of the container */
+}
 
 
       .text-styles {
-        display: flex;
-        align-items: start;
-        justify-content: center;
+        align-self: flex-start;
+        font-size: 12px;
+        color: #333333;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
 
@@ -355,7 +371,7 @@
               <br />
               <br />
               <h3
-                class="text-cuote izquierda"
+                class="text-cuote izquierda "
                 style="text-transform: uppercase"
               >
                 Colágeno, rico en antioxidantes, y biotina combinados para
@@ -401,7 +417,7 @@
     
     <!-- Sección Módulo Iconos -->
   <section>
-    <div class="title-images-container mb-5">
+    <div class="images-container mb-5">
 
 
 
@@ -512,7 +528,7 @@
     <!-- Sección Módulo Quote 1-->
     <div class="container">
       <div class="align-self-center py-3 bg-white">
-        <h2 class="text-center text-cuote">CARACTERÍSTICAS PRINCIPALES</h2>
+        <h2 class="text-center title-styles">CARACTERÍSTICAS PRINCIPALES</h2>
       </div>
     </div>
     <br />
@@ -560,7 +576,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <h4 class="text-left h4" style="text-transform: uppercase">
+          <h4 class="text-left h4 LISTADO" style="text-transform: uppercase">
             <strong>Control de temperatura personalizado</strong>
           </h4>
           <p class="p_pixel newaline">
@@ -572,7 +588,7 @@
           </p>
         </div>
         <div class="col-sm-4">
-          <h4 class="text-left h4" style="text-transform: uppercase">
+          <h4 class="text-left h4 LISTADO" style="text-transform: uppercase">
             <strong>Cabello suave, sin residuos grasos y protegido</strong>
           </h4>
           <p class="p_pixel newaline">
@@ -582,7 +598,7 @@
           </p>
         </div>
         <div class="col-sm-4">
-          <h4 class="text-left h4" style="text-transform: uppercase">
+          <h4 class="text-left h4 LISTADO" style="text-transform: uppercase">
             <strong>Acondicionamiento iónico de turmalina</strong>
           </h4>
           <p class="p_pixel newaline">
@@ -613,7 +629,7 @@
 
     <div class="container">
       <div class="align-self-center">
-        <h5 class="text-left h4"><strong> INCLUYE</strong></h5>
+        <h5 class="text-left h4 LISTADO"><strong> INCLUYE</strong></h5>
       </div>
       <br />
       <ul class="letra">
@@ -626,7 +642,7 @@
     <!-- Texto Legales-->
     <div class="container">
       <section>
-        <p>*vs. secador estándar de Remington.</p>
+        <p class="letra">*vs. secador estándar de Remington.</p>
       </section>
     </div>
     <br />

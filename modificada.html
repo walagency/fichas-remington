@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>D26A</title>
+    <!-- Required meta tags -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .hojas {
+        width: 1em;
+        height: 1em;
+        margin-left: 0.2em;
+      }
+      .centerRow {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .estandar {
+        width: 50% !important;
+        height: auto !important;
+        margin-left: 25% !important;
+      }
+
+      .h6differentText {
+        height: auto !important;
+      }
+
+      @media screen and (max-width: 64em) {
+        .h6differentText {
+          width: 90% !important;
+          height: auto !important;
+          margin-left: 5% !important;
+        }
+        .col6 {
+          margin-left: 0% !important;
+          margin-right: 0% !important;
+          margin-bottom: 0%;
+        }
+      }
+
+      @media screen and (max-width: 50em) {
+        .h6differentText {
+          width: 90% !important;
+          height: auto !important;
+          margin-left: 5% !important;
+        }
+        .col6 {
+          margin-left: 0% !important;
+          margin-right: 0% !important;
+          margin-bottom: 0%;
+        }
+      }
+
+      @media screen and (max-width: 40em) {
+        .h6differentText {
+          width: 90% !important;
+          height: auto !important;
+          margin-left: 5% !important;
+          margin-bottom: 0%;
+        }
+        .col6 {
+          margin-left: 0% !important;
+          margin-right: 0% !important;
+          margin-bottom: -10%;
+        }
+      }
+
+      @media screen and (max-width: 19em) {
+        .h6differentText {
+          width: 90% !important;
+          height: auto !important;
+          margin-left: 5% !important;
+          margin-bottom: 0%;
+        }
+        .col6 {
+          margin-left: 0% !important;
+          margin-right: 0% !important;
+          margin-bottom: 0%;
+        }
+      }
+
+      .izquierda {
+        text-align: left !important;
+      }
+
+      .body {
+        font-size: 60px !important;
+      }
+
+      .p_pixel {
+        font-size: 16px !important;
+      }
+
+      .modulo {
+        margin-top: 10px;
+      }
+
+      .modulo3 {
+        margin-top: 30px;
+      }
+
+      .cajatexto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 450px;
+        font-size: 18px;
+      }
+
+      .text-color {
+        color: #000;
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+
+      .text-cuote {
+        color: #000;
+        font-size: 30px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .text-color-titulo {
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      .letra li {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+      }
+
+      body
+        > div:nth-child(1)
+        > section:nth-child(2)
+        > div
+        > div
+        > div.col-sm-6.my-auto.mx-auto
+        > p {
+        font-size: 16px;
+      }
+
+      body > section > div > div > div.col-sm-7 > p {
+        font-size: 16px;
+      }
+
+      body > div:nth-child(14) > div > div:nth-child(1) > p {
+        font-size: 16px;
+      }
+
+      body > div:nth-child(14) > div > div:nth-child(2) > p {
+        font-size: 16px;
+      }
+
+      body > div:nth-child(14) > div > div:nth-child(3) > p {
+        font-size: 16px;
+      }
+
+      .my-fixed-item {
+        position: fixed;
+        min-height: 120px;
+        width: 252px;
+        text-align: center;
+        word-wrap: break-word;
+        background-color: aquamarine;
+      }
+
+      .active2 {
+        background-color: #000;
+        color: white;
+      }
+
+      body
+        > section
+        > section:nth-child(6)
+        > div:nth-child(1)
+        > div
+        > div
+        > div:nth-child(1)
+        > img {
+        width: 90%;
+      }
+
+      body
+        > section
+        > section:nth-child(6)
+        > div:nth-child(1)
+        > div
+        > div
+        > div:nth-child(2)
+        > img {
+        width: 90%;
+      }
+
+      body
+        > section
+        > section:nth-child(6)
+        > div:nth-child(1)
+        > div
+        > div
+        > div:nth-child(3)
+        > img {
+        width: 90%;
+      }
+
+      body
+        > section
+        > div:nth-child(16)
+        > div.list-group
+        > button.list-group-item {
+        border: 0 none;
+      }
+
+      body > section > div:nth-child(1) > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 20vh;
+      }
+
+      body > section > section:nth-child(6) > div:nth-child(3) > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 20vh;
+      }
+
+      .LISTADO {
+        font-size: 18px;
+      }
+
+      .newaline {
+        text-align: justify;
+      }
+
+
+      .title-images-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: center;
+        gap: 115px;
+      }
+
+
+
+
+      .imagen-container {
+        display: flex; /* flexbox para centrar el contenido */
+        justify-content: center; /* Centra horizontalmente el contenido */
+        align-items: end;
+        width: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      .image-banner {
+        width: 100%; /* Hace que la imagen tenga un 100% de ancho y ocupe todo el ancho del div */
+      }
+
+
+
+
+
+      .text-styles {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+      }
+
+
+
+
+      .videosize {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- Sección Módulo Hero Banner -->
+    <div class="container">
+      <section>
+        <div class="row">
+          <div class="col-sm-2 my-auto">
+            <img
+              src="IMG/00-Logo_Remington.jpg"
+              class="img-fluid"
+              style="width: 100%"
+            />
+          </div>
+          <img
+            src="IMG/01-Banner-Hero-1800x660.jpg"
+            alt="Banner"
+            style="width: 100%"
+          />
+        </div>
+      </section>
+      <!-- Sección Módulo Hero Banner -->
+      <!-- Sección Módulo Presentaciñon de Producto -->
+      <section>
+        <div class="container">
+          <br />
+          <div class="row">
+            <div class="col-sm-5 my-auto mx-auto">
+              <img
+                src="IMG/02-Product-Hero-800x800.jpg"
+                class="img-fluid"
+                alt=""
+                style="width: 100%"
+              />
+            </div>
+            <div class="col-sm-6 my-auto mx-auto">
+              <br />
+              <br />
+              <h3
+                class="text-cuote izquierda"
+                style="text-transform: uppercase"
+              >
+                Colágeno, rico en antioxidantes, y biotina combinados para
+                ofrecerte <br />2 veces más protección*
+              </h3>
+              <p class="d-flex align-items-center text-justify newaline">
+                El secador de cabello Collagen & Biotin Therapy™ ofrece 2 veces
+                más protección*, gracias a su recubrimiento avanzado con
+                microacondicionador enriquecido con extractos de colágeno y
+                biotina que ayuda a proteger tu cabello mientras lo estilizas.
+                Además, incorpora una innovadora tecnología de acondicionamiento
+                iónico de turmalina para reducir el frizz.
+              </p>
+              <br />
+              <ul class="LISTADO">
+                <li>2 veces más protección*</li>
+                <li>Acondicionamiento iónico de turmalina para menos frizz*</li>
+                <li>Cabello suave y sin residuos grasos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <br />
+
+    <!-- Sección Módulo Video -->
+    <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 mb-5">
+      <div class="ratio ratio-16x9 text-center mt-4 mb-4">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/A3iLEEbu3Uc"
+          style="max-width: 100%; height: 100%"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <br />
+
+    
+   
+    
+    <!-- Sección Módulo Iconos -->
+  <section>
+    <div class="title-images-container mb-5">
+
+
+
+      <div class="imagen-container">
+        <img src="IMG/05-Icon_2.svg" class="img-fluid image-banner" />
+        <h6 class="text-styles">
+          <strong>5 AÑOS DE GARANTÍA</strong>
+        </h6>
+      </div>
+
+      <div class="imagen-container">
+        <img src="IMG/06-Icon_3.svg" class="img-fluid image-banner" />
+        <h6 class="text-styles">
+          <strong>MOTOR DC</strong>
+        </h6>
+      </div>
+
+      <div class="imagen-container">
+        <img src="IMG/07-Icon_4.svg" class="img-fluid image-banner" />
+        <h6 class="text-styles">
+          <strong>CERÁMICA</strong>
+        </h6>
+      </div>
+
+      <div class="imagen-container">
+        <img src="IMG/08-Icon_5.svg" class="img-fluid image-banner" />
+        <h6 class="text-styles">
+          <strong> IONES </strong>
+        </h6>
+      </div>
+
+      <div class="imagen-container">
+        <img src="IMG/10-Icon_7.svg" class="img-fluid image-banner" />
+        <h6 class="text-styles">
+          <strong>COLÁGENO Y BIOTINA </strong>
+        </h6>
+      </div>
+
+      <div class="imagen-container">
+        <img src="IMG/09-Icon_6.svg" class="image-banner" />
+        <h6 class="text-styles">
+          <strong>MICRO-ACONDICIONADORES</strong>
+        </h6>
+      </div>
+
+
+
+    </div>
+  </section>
+
+    <br />
+
+    <!-- Sección Módulo Foto Derecha-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h3 class="text-left text-cuote">
+              OLVÍDATE DEL FRIZZ Y DE LOS RESIDUOS GRASOS CON EL SECADOR
+              COLLAGEN <br />& BIOTIN THERAPY™
+            </h3>
+            <p
+              class="d-flex align-items-center text-parrafo text-justify newaline"
+            >
+              El secador de Collagen & Biotin Therapy™ posee acondicionamiento
+              iónico de turmalina para que puedas crear looks libres de frizz
+              con un secado seguro y fácil.
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <img
+              src="IMG/10-Secundario-800x800.jpg"
+              producto=" "
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Módulo Foto Izquierda -->
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 my-auto mx-auto">
+          <img
+            src="IMG/11-Proceso_1-800x552.jpg"
+            style="width: 100%"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-4 my-auto mx-auto">
+          <img
+            src="IMG/12-Proceso_2-800x552.jpg "
+            style="width: 100%"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-4 my-auto mx-auto">
+          <img
+            src="IMG/13-Proceso_3-800x552.jpg "
+            style="width: 100%"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Sección Módulo Quote 1-->
+    <div class="container">
+      <div class="align-self-center py-3 bg-white">
+        <h2 class="text-center text-cuote">CARACTERÍSTICAS PRINCIPALES</h2>
+      </div>
+    </div>
+    <br />
+    <!-- Sección Módulo Hero -->
+    <div class="container">
+      <div class="row">
+        <img
+          src="IMG/14-Características-1800x660.jpg "
+          alt="Banner "
+          style="width: 100%"
+        />
+      </div>
+    </div>
+    <br />
+
+    <!-- Sección Módulo Foto Izquierda --><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 my-auto mx-auto">
+          <img
+            src="IMG/16-Detalle_1-600x600.jpg "
+            style="width: 100%"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-4 my-auto mx-auto">
+          <img
+            src="IMG/17-Detalle_2-600x600.jpg "
+            style="width: 100%"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-4 my-auto mx-auto">
+          <img
+            src="IMG/18-Detalle_3-600x600.jpg "
+            style="width: 100%"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Sección Módulo Tres Fotos -->
+    <!-- Sección Módulo Tres Fotos -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4 class="text-left h4" style="text-transform: uppercase">
+            <strong>Control de temperatura personalizado</strong>
+          </h4>
+          <p class="p_pixel newaline">
+            Pensado para satisfacer las necesidades de todo tipo de cabello, el
+            secador Collagen & Biotin Therapy™ cuenta con un control de
+            temperatura personalizado con 3 ajustes de temperatura y 2 de
+            velocidad, además de una ráfaga de aire frío que ayuda a fijar tu
+            peinado.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4 class="text-left h4" style="text-transform: uppercase">
+            <strong>Cabello suave, sin residuos grasos y protegido</strong>
+          </h4>
+          <p class="p_pixel newaline">
+            El secador Collagen & Biotin Therapy™ incorpora microacondicionador
+            enriquecido de colágeno y biotina que protege tu cabello dejándolo
+            suave, con menos frizz y sin residuos grasos.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h4 class="text-left h4" style="text-transform: uppercase">
+            <strong>Acondicionamiento iónico de turmalina</strong>
+          </h4>
+          <p class="p_pixel newaline">
+            El secador Collagen & Biotin Therapy™ ha sido diseñado con
+            acondicionamiento iónico de turmalina que permite un secado rápido y
+            libre de frizz. La turmalina trabaja en conjunto con la tecnología
+            de cerámica de este secador, produciendo calor infrarrojo para un
+            secado seguro y fácil.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- Sección Módulo Hero -->
+    <div class="container">
+      <div class="row">
+        <img
+          src="IMG/15-Ambientado-1800x660.jpg"
+          alt="Banner "
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <br />
+    <!-- Sección Módulo Quote 1-->
+
+    <div class="container">
+      <div class="align-self-center">
+        <h5 class="text-left h4"><strong> INCLUYE</strong></h5>
+      </div>
+      <br />
+      <ul class="letra">
+        <li>Secador</li>
+        <li>Concentrador</li>
+        <li>Guía de utilización y cuidados</li>
+        <br />
+      </ul>
+    </div>
+    <!-- Texto Legales-->
+    <div class="container">
+      <section>
+        <p>*vs. secador estándar de Remington.</p>
+      </section>
+    </div>
+    <br />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

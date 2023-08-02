@@ -276,9 +276,6 @@
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
-
-     
-
       .images-container {
         display: flex;
         flex-wrap: wrap;
@@ -298,10 +295,7 @@
 
       .image-banner {
         width: 100%; /* Hace que la imagen tenga un 100% de ancho y ocupe todo el ancho del div */
-        
       }
-
-
 
       .text-styles {
         display: flex; /* flexbox para centrar el contenido */
@@ -312,8 +306,10 @@
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
+      .unalinea {
+        white-space: nowrap; /* Evita el salto de línea */
 
-
+      }
 
       .videosize {
         display: flex;
@@ -422,7 +418,7 @@
 
       <div class="imagen-container">
         <img src="IMG/06-Icon_3.svg" class="img-fluid image-banner mb-3" />
-        <h6 class="text-styles">
+        <h6 class="text-styles unalinea">
           <strong>MOTOR DC</strong>
         </h6>
       </div>
@@ -646,4 +642,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
+</html> 
